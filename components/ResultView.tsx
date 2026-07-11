@@ -123,7 +123,7 @@ export default function ResultView({
             onClick={() => setModalOpen(true)}
             className="cursor-pointer text-[12.5px] font-semibold text-ink-soft underline-offset-2 transition hover:text-brand hover:underline max-[420px]:hidden"
           >
-            how it works ↗
+            about ↗
           </button>
           <GithubStar stars={stars ?? null} />
         </div>

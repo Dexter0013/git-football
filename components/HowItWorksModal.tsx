@@ -2,8 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-// The six GitHub signals behind each stat — accurate to the engine (PACE is a
-// year of ALL contribution types, not just commits).
+// The six GitHub signals behind each stat
 const READS = [
   { abbr: "PAC", gloss: "A year of commits, PRs, reviews & issues" },
   { abbr: "SHO", gloss: "Stars earned, and your biggest single hit" },
@@ -14,7 +13,6 @@ const READS = [
 ];
 
 // How the scout reads you — the three things that make a card a fingerprint
-// rather than a score. These are independent truths, not steps, so no 01/02/03.
 const LAWS = [
   {
     kicker: "MEASURED AGAINST YOU",
@@ -34,7 +32,7 @@ const LAWS = [
   },
 ];
 
-// The finish ladder, low to legend — order carries meaning, hence the arrows.
+// The finish ladder, low to legend
 const LADDER = [
   { label: "BRONZE", bg: "#2A1A0C", ink: "#F0CFA8" },
   { label: "SILVER", bg: "#262B33", ink: "#D6DCE6" },
@@ -48,8 +46,6 @@ export default function HowItWorksModal({ onClose }: { onClose: () => void }) {
   const panelRef = useRef<HTMLDivElement>(null);
   const [shown, setShown] = useState(false);
 
-  // Close on Escape, move focus into the dialog, and play a subtle entrance
-  // (the global reduced-motion reset makes the transition instant when asked).
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -87,7 +83,7 @@ export default function HowItWorksModal({ onClose }: { onClose: () => void }) {
         <div
           aria-hidden
           className="pointer-events-none absolute inset-x-0 top-0 h-px"
-          style={{ background: "linear-gradient(90deg, transparent, rgba(57,211,83,.55), transparent)" }}
+          style={{ background: "linear-gradient(90deg, transparent, rgba(0,132,255,.55), transparent)" }}
         />
 
         <button
@@ -98,24 +94,30 @@ export default function HowItWorksModal({ onClose }: { onClose: () => void }) {
           ✕
         </button>
 
-        {/* hero — the thesis: we read you, we don't rate you */}
+        {/* Hero image banner */}
+        <div className="mb-6 overflow-hidden rounded-xl border border-line bg-bg-deep/40">
+          <img
+            src="/about.png"
+            alt="About gitfootball2026"
+            className="w-full object-contain"
+          />
+        </div>
+
+        {/* Hero — About gitfootball2026 */}
         <div className="font-mono mb-[14px] text-[11px] font-semibold tracking-[.32em] text-brand">
-          THE SCOUT&apos;S EYE
+          ABOUT
         </div>
         <h3
           id="hiw-title"
           className="font-display m-0 text-[clamp(30px,5.4vw,44px)] font-black leading-[.95] tracking-[-.01em]"
         >
-          We don&apos;t rate you.
-          <br />
-          We read you<span className="text-brand">.</span>
+          gitfootball2026<span className="text-brand">.</span>
         </h3>
         <p className="m-0 mt-[15px] max-w-[47ch] text-[14.5px] leading-[1.55] text-ink-dim">
-          Six signals off your live GitHub, weighed against each other to find your shape. That shape is your card — so
-          two devs with the same numbers still walk out different. Here&apos;s how to read yours.
+          gitfootball2026 turns your GitHub profile into a customizable FIFA-Ultimate-Team-style player card, rated out of 99. We read six key signals off your live GitHub and weigh them to find your custom stats and archetype.
         </p>
 
-        {/* the three laws — hairline-separated, scout-vocab kickers */}
+        {/* the three laws */}
         <div className="mt-[26px] flex flex-col">
           {LAWS.map((law) => {
             const accent = law.gold ? "var(--color-gold-hi)" : "var(--color-brand)";
@@ -134,7 +136,7 @@ export default function HowItWorksModal({ onClose }: { onClose: () => void }) {
           })}
         </div>
 
-        {/* what feeds the six — a compact readout that echoes the card's stat block */}
+        {/* what feeds the six */}
         <div className="mt-[24px] border-t border-white/[0.08] pt-[20px]">
           <div className="font-mono mb-[14px] text-[10.5px] font-bold tracking-[.2em] text-ink-faint">
             WHAT FEEDS THE SIX
@@ -151,7 +153,7 @@ export default function HowItWorksModal({ onClose }: { onClose: () => void }) {
           </div>
         </div>
 
-        {/* the ladder — what you're chasing, low to legend */}
+        {/* the ladder */}
         <div className="mt-[24px] border-t border-white/[0.08] pt-[20px]">
           <div className="font-mono mb-[13px] text-[10.5px] font-bold tracking-[.2em] text-ink-faint">THE LADDER</div>
           <div className="flex flex-wrap items-center gap-y-[8px]">

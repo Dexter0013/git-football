@@ -33,7 +33,7 @@ export default function ScoutForm({
     <div className="min-w-0 w-full flex flex-col items-center justify-center text-center">
       {/* mascot — the brand face on the hero */}
       <div className="mb-1 mx-auto flex justify-center">
-        <Mascot className="w-[110px] h-[110px] max-[520px]:w-[75px] max-[520px]:h-[75px]" />
+        <Mascot animate={false} className="w-[110px] h-[110px] max-[520px]:w-[75px] max-[520px]:h-[75px]" />
       </div>
 
       {/* crossover "fixture" tag — the dev world (mono GITHUB) versus the
@@ -143,7 +143,7 @@ export default function ScoutForm({
           onClick={onOpenModal}
           className="cursor-pointer text-[12.5px] font-semibold text-ink-soft underline-offset-2 transition hover:text-brand hover:underline"
         >
-          how it works ↗
+          about ↗
         </button>
       </div>
     </div>

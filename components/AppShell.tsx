@@ -13,9 +13,7 @@ import GithubStar from "@/components/GithubStar";
 const HowItWorksModal = dynamic(() => import("@/components/HowItWorksModal"), {
   ssr: false,
 });
-// Home-only: AppShell is rendered solely by app/page.tsx, so the TEAM NEWS
-// bulletin never mounts on scout/duel pages. Lazy + ssr:false like the modal.
-const WhatsNew = dynamic(() => import("@/components/WhatsNew"), { ssr: false });
+
 
 export default function AppShell({
   stars,
@@ -74,7 +72,6 @@ export default function AppShell({
       <SupportProductHunt />
 
       {modalOpen && <HowItWorksModal onClose={() => setModalOpen(false)} />}
-      <WhatsNew />
 
       {isPending && pending && <LoadingScreen login={pending} />}
     </>

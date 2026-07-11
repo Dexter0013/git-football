@@ -2,7 +2,7 @@
 
 <img src="public/mascot.png" width="120" alt="GitFut mascot">
 
-# GitFut
+# gitfootball2026
 
 **your GitHub, rated out of 99** ⚽
 

@@ -47,10 +47,10 @@ async function fallback(username: string) {
           textAlign: "center",
         }}
       >
-        <div style={{ display: "flex", color: "#0084ff", fontSize: 34, fontWeight: 700, letterSpacing: 6 }}>GITFUT</div>
+        <div style={{ display: "flex", color: "#0084ff", fontSize: 34, fontWeight: 700, letterSpacing: 6 }}>GITFOOTBALL2026</div>
         <div style={{ display: "flex", fontSize: 56, fontWeight: 700, marginTop: 24 }}>@{username}</div>
         <div style={{ display: "flex", fontSize: 30, color: "#a8b3bd", marginTop: 22 }}>scout this profile at</div>
-        <div style={{ display: "flex", marginTop: 10, fontSize: 32, color: "#0084ff", fontWeight: 700 }}>gitfut.com</div>
+        <div style={{ display: "flex", marginTop: 10, fontSize: 32, color: "#0084ff", fontWeight: 700 }}>gitfootball2026</div>
       </div>
     ),
     { width: W, height: H, fonts, headers: { "Cache-Control": "public, max-age=300" } },

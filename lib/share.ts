@@ -80,7 +80,7 @@ export function intentUrl(platform: SharePlatform, card: Card): string {
 // Native Web Share API payload (text + url; file added at call site for IG).
 export function nativeSharePayload(card: Card): { title: string; text: string; url: string } {
   return {
-    title: "GitFut",
+    title: "gitfootball2026",
     text: shareMessage(card),
     url: cardUrl(card),
   };
@@ -121,7 +121,7 @@ export function duelSharePayload(
   opponent: string,
 ): { title: string; text: string; url: string } {
   return {
-    title: "GitFut Duel",
+    title: "gitfootball2026 Duel",
     text: duelShareMessage(challenger, opponent),
     url: duelUrl(challenger, opponent),
   };

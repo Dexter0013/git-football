@@ -5,7 +5,7 @@ import { loadCardAssets, cardTree } from "@/lib/og/renderCard";
 // Branded preview for the home page / bare gitfut.com links. Next wires this as
 // the default og:image + twitter:image automatically (metadataBase is absolute).
 export const runtime = "nodejs";
-export const alt = "GitFut — your GitHub, rated out of 99";
+export const alt = "gitfootball2026 — your GitHub, rated out of 99";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -48,7 +48,7 @@ export default async function Image() {
               Turn any GitHub profile into a World-Cup-style player card, rated out of 99.
             </div>
           </div>
-          <div style={{ display: "flex", fontSize: 28, color: "#6e7681" }}>gitfut.com</div>
+          <div style={{ display: "flex", fontSize: 28, color: "#6e7681" }}>gitfootball2026</div>
         </div>
 
         {/* the real card as the hero (Torvalds sample), same renderer as the embeds */}

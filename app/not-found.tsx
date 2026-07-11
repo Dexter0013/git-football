@@ -4,7 +4,7 @@ import Background from "@/components/Background";
 import Mascot from "@/components/Mascot";
 
 export const metadata: Metadata = {
-  title: "404 · Offside — GitFut",
+  title: "404 · Offside — gitfootball2026",
   robots: { index: false },
 };
 

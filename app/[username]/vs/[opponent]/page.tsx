@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     // folder; Next wires it into og:image + twitter:image automatically, so we
     // only set the copy here. summary_large_image makes X render it full-bleed.
     return {
-      title: `${a.card.name} vs ${b.card.name} · GitFut Duel`,
+      title: `${a.card.name} vs ${b.card.name} · gitfootball2026 Duel`,
       // Score-free on purpose: the fixture poster and this line sell the click,
       // the page plays the match.
       description: `Six stats, one result: @${a.card.login} vs @${b.card.login}, settled on real GitHub numbers.`,
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     };
   }
   return {
-    title: `@${username} vs @${opponent} · GitFut`,
+    title: `@${username} vs @${opponent} · gitfootball2026`,
     robots: { index: false },
   };
 }

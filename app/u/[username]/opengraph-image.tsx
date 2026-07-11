@@ -67,7 +67,7 @@ export default async function Image({ params }: { params: Promise<{ username: st
           <div style={{ display: "flex", color: "#0084ff", fontSize: 26, fontWeight: 700, letterSpacing: 4 }}>GITHUB × WORLD CUP 26</div>
           <div style={{ display: "flex", fontSize: 84, fontWeight: 700, marginTop: 20 }}>@{username}</div>
           <div style={{ display: "flex", fontSize: 34, color: "#a8b3bd", marginTop: 18 }}>Get your GitHub rated out of 99.</div>
-          <div style={{ display: "flex", fontSize: 30, color: "#0084ff", fontWeight: 700, marginTop: 26 }}>gitfut.com</div>
+          <div style={{ display: "flex", fontSize: 30, color: "#0084ff", fontWeight: 700, marginTop: 26 }}>gitfootball2026</div>
         </div>
       ),
       { ...size, fonts, headers: CACHE },

@@ -4,7 +4,7 @@
 
 Please **do not** open a public issue for security problems.
 
-Report it privately through GitHub's **[private vulnerability reporting](https://github.com/Younesfdj/gitfut/security/advisories/new)** (repo → **Security** → **Report a vulnerability**). If that isn't available, email **ferradjiyounes69@gmail.com**.
+Report it privately through GitHub's **[private vulnerability reporting](https://github.com/Dexter0013/git-football/security/advisories/new)** (repo → **Security** → **Report a vulnerability**). If that isn't available, email **ferradjiyounes69@gmail.com**.
 
 Please include:
 

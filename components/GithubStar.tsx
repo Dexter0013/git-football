@@ -1,7 +1,8 @@
-import { Star } from "lucide-react";
+import { Star, Globe } from "lucide-react";
 import { formatCount } from "@/lib/format";
 
-const REPO_URL = "https://github.com/younesfdj/gitfut";
+const REPO_URL = "https://github.com/Dexter0013/git-football";
+const ORIGINAL_URL = "https://gitfut.com/";
 
 // lucide dropped its brand marks, so the GitHub octocat is an inline SVG.
 function GithubMark({ size = 16 }: { size?: number }) {
@@ -19,34 +20,47 @@ function GithubMark({ size = 16 }: { size?: number }) {
   );
 }
 
-// Primary "support" CTA — the repo star ask, lifted out of the footer into the
-// page's top-right corner so it's the first thing a (now viral) visitor sees.
-// A glassy pill (border + dark blur backdrop) keeps it legible over the
-// contribution-grid motif on every tier/route. The live count shows once it's
-// meaningful (≥10); below that the lone gold star reads as "give us a star".
+// Primary "support" CTA — the repo star ask and original site link, lifted out
+// of the footer into the page's top-right corner so it's the first thing a visitor sees.
+// Glassy pills (border + dark blur backdrop) keep them legible over the backdrop.
 export default function GithubStar({ stars }: { stars: number | null }) {
   const showCount = stars !== null && stars >= 10;
   return (
-    <a
-      href={REPO_URL}
-      target="_blank"
-      rel="noopener"
-      aria-label="Star GitFut on GitHub"
-      className="group inline-flex items-center gap-[8px] rounded-full border border-line bg-bg-deep/55 py-[7px] pl-[13px] pr-[7px] text-[13px] font-semibold text-ink-soft backdrop-blur-md transition duration-200 hover:-translate-y-px hover:border-ink-mute hover:bg-bg-deep/80 hover:text-ink"
-    >
-      <GithubMark size={16} />
-      <span className="max-[520px]:hidden">Star on GitHub</span>
-      <span className="inline-flex items-center gap-[4px] rounded-full bg-white/[0.06] px-[8px] py-[3px] leading-none text-ink-dim transition group-hover:bg-white/[0.1] group-hover:text-ink">
-        <Star
-          color="var(--color-gold)"
-          fill="var(--color-gold)"
-          size={12}
-          className="relative -top-px shrink-0 transition-transform duration-200 group-hover:scale-110"
-        />
-        {showCount && (
-          <span className="font-mono text-[12px]">{formatCount(stars)}</span>
-        )}
-      </span>
-    </a>
+    <div className="flex items-center gap-[10px]">
+      {/* Original Site Link */}
+      <a
+        href={ORIGINAL_URL}
+        target="_blank"
+        rel="noopener"
+        aria-label="Visit original GitFut website"
+        className="group inline-flex items-center gap-[6px] rounded-full border border-line bg-bg-deep/55 py-[7px] px-[13px] text-[13px] font-semibold text-ink-soft backdrop-blur-md transition duration-200 hover:-translate-y-px hover:border-ink-mute hover:bg-bg-deep/80 hover:text-ink"
+      >
+        <Globe size={14} className="shrink-0 text-brand" />
+        <span className="max-[520px]:hidden">link to original website</span>
+      </a>
+
+      {/* Star on GitHub Link */}
+      <a
+        href={REPO_URL}
+        target="_blank"
+        rel="noopener"
+        aria-label="Star GitFut on GitHub"
+        className="group inline-flex items-center gap-[8px] rounded-full border border-line bg-bg-deep/55 py-[7px] pl-[13px] pr-[7px] text-[13px] font-semibold text-ink-soft backdrop-blur-md transition duration-200 hover:-translate-y-px hover:border-ink-mute hover:bg-bg-deep/80 hover:text-ink"
+      >
+        <GithubMark size={16} />
+        <span className="max-[520px]:hidden">Star on GitHub</span>
+        <span className="inline-flex items-center gap-[4px] rounded-full bg-white/[0.06] px-[8px] py-[3px] leading-none text-ink-dim transition group-hover:bg-white/[0.1] group-hover:text-ink">
+          <Star
+            color="var(--color-gold)"
+            fill="var(--color-gold)"
+            size={12}
+            className="relative -top-px shrink-0 transition-transform duration-200 group-hover:scale-110"
+          />
+          {showCount && (
+            <span className="font-mono text-[12px]">{formatCount(stars)}</span>
+          )}
+        </span>
+      </a>
+    </div>
   );
 }

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/mascot.webp" width="120" alt="GitFut mascot">
+<img src="public/mascot.png" width="120" alt="GitFut mascot">
 
 # GitFut
 

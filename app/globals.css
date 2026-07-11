@@ -24,11 +24,11 @@
   --color-ink-faint: #8b949e;
   --color-ink-mute: #6e7681;
 
-  /* GitHub green — "the action" */
-  --color-brand: #39d353;
-  --color-brand-hi: #56e06b;
-  --color-brand-mid: #26a641;
-  --color-brand-deep: #006d32;
+  /* FIFA blue — "the action" */
+  --color-brand: #0084ff;
+  --color-brand-hi: #4da6ff;
+  --color-brand-mid: #0060b8;
+  --color-brand-deep: #00366b;
 
   /* WC26 gold — prestige metal (reserved) */
   --color-gold: #d4af37;

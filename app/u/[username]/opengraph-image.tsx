@@ -57,17 +57,17 @@ export default async function Image({ params }: { params: Promise<{ username: st
             alignItems: "center",
             justifyContent: "center",
             background: "#02001e",
-            backgroundImage: "radial-gradient(900px 500px at 50% -10%, rgba(57,211,83,0.16), transparent 60%)",
+            backgroundImage: "radial-gradient(900px 500px at 50% -10%, rgba(0,132,255,0.16), transparent 60%)",
             color: "#e6edf3",
             fontFamily: "DINPro",
             textAlign: "center",
             padding: 64,
           }}
         >
-          <div style={{ display: "flex", color: "#39d353", fontSize: 26, fontWeight: 700, letterSpacing: 4 }}>GITHUB × WORLD CUP 26</div>
+          <div style={{ display: "flex", color: "#0084ff", fontSize: 26, fontWeight: 700, letterSpacing: 4 }}>GITHUB × WORLD CUP 26</div>
           <div style={{ display: "flex", fontSize: 84, fontWeight: 700, marginTop: 20 }}>@{username}</div>
           <div style={{ display: "flex", fontSize: 34, color: "#a8b3bd", marginTop: 18 }}>Get your GitHub rated out of 99.</div>
-          <div style={{ display: "flex", fontSize: 30, color: "#39d353", fontWeight: 700, marginTop: 26 }}>gitfut.com</div>
+          <div style={{ display: "flex", fontSize: 30, color: "#0084ff", fontWeight: 700, marginTop: 26 }}>gitfut.com</div>
         </div>
       ),
       { ...size, fonts, headers: CACHE },
@@ -75,7 +75,7 @@ export default async function Image({ params }: { params: Promise<{ username: st
   }
 
   const card = { ...raw, country: pickFlag(null, raw.country) ?? "" }; // GitHub-derived flag only
-  const accent = card.founder?.accent ?? TIER_ACCENT[card.finish] ?? "#39d353";
+  const accent = card.founder?.accent ?? TIER_ACCENT[card.finish] ?? "#0084ff";
   const assets = await loadCardAssets(card, CARD_W);
 
   return new ImageResponse(
@@ -88,7 +88,7 @@ export default async function Image({ params }: { params: Promise<{ username: st
           alignItems: "center",
           background: "#02001e",
           backgroundImage:
-            "radial-gradient(760px 520px at 22% 12%, rgba(57,211,83,0.14), transparent 60%), radial-gradient(720px 520px at 100% 110%, rgba(212,175,55,0.10), transparent 60%)",
+            "radial-gradient(760px 520px at 22% 12%, rgba(0,132,255,0.14), transparent 60%), radial-gradient(720px 520px at 100% 110%, rgba(212,175,55,0.10), transparent 60%)",
           color: "#e6edf3",
           fontFamily: "DINPro",
           padding: "0 76px",
@@ -99,7 +99,7 @@ export default async function Image({ params }: { params: Promise<{ username: st
 
         {/* right: identity + the "why" — the card itself carries rating/stats/flag */}
         <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
-          <div style={{ display: "flex", color: "#39d353", fontSize: 24, fontWeight: 700, letterSpacing: 3 }}>GITHUB × WORLD CUP 26</div>
+          <div style={{ display: "flex", color: "#0084ff", fontSize: 24, fontWeight: 700, letterSpacing: 3 }}>GITHUB × WORLD CUP 26</div>
           <div style={{ display: "flex", fontSize: 76, fontWeight: 700, marginTop: 14, lineHeight: 1 }}>{card.name}</div>
           <div style={{ display: "flex", marginTop: 20, fontSize: 34, fontWeight: 700 }}>
             <span style={{ display: "flex", color: accent }}>

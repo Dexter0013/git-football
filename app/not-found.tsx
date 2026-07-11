@@ -19,13 +19,13 @@ function OffsideFlag() {
       viewBox="0 0 118 150"
       fill="none"
       aria-hidden
-      style={{ filter: "drop-shadow(0 6px 16px rgba(57,211,83,.35))" }}
+      style={{ filter: "drop-shadow(0 6px 16px rgba(0,132,255,.35))" }}
     >
       <defs>
         <pattern id="offside-check" width="22" height="22" patternUnits="userSpaceOnUse">
-          <rect width="22" height="22" fill="#39d353" />
-          <rect width="11" height="11" fill="#0b2c17" />
-          <rect x="11" y="11" width="11" height="11" fill="#0b2c17" />
+          <rect width="22" height="22" fill="#0084ff" />
+          <rect width="11" height="11" fill="#001830" />
+          <rect x="11" y="11" width="11" height="11" fill="#001830" />
         </pattern>
       </defs>
 
@@ -37,7 +37,7 @@ function OffsideFlag() {
       <path
         d="M25 14 L112 26 Q116 27 112 30 L112 64 Q116 65 112 68 L25 62 Z"
         fill="url(#offside-check)"
-        stroke="#0b2c17"
+        stroke="#001830"
         strokeWidth="2"
         strokeLinejoin="round"
       />
@@ -58,7 +58,7 @@ export default function NotFound() {
               <OffsideFlag />
             </div>
           </div>
-          <Mascot size={68} className="mb-1 opacity-95" />
+          <Mascot size={50} className="mb-1 opacity-95" />
         </div>
 
         <p className="font-display text-[12px] font-bold tracking-[.3em] text-brand">FLAG ON THE PLAY</p>

@@ -26,7 +26,7 @@ const SAFE_H = STORY_H - SAFE_TOP - SAFE_BOTTOM; // 1420px usable
 const CARD_W = 606;
 const CARD_H = Math.round(CARD_W * (820 / 540)); // ≈ 920
 
-const BRAND = "#39d353";
+const BRAND = "#0084ff";
 
 // theme.glow is already an `rgba(r,g,b,a)` string (finishTheme.ts). Re-alpha it
 // so we can reuse the tier hue at a chosen opacity for the room wash.
@@ -106,31 +106,33 @@ const StoryFrame = forwardRef<HTMLDivElement, { card: Card }>(function StoryFram
       }}
     >
       {/* top — brand wordmark + concept line (sets the frame before the bait) */}
-      <div style={abs(SAFE_TOP + 8)}>
-        <div
-          style={{
-            fontFamily: FONT_DISPLAY,
-            fontSize: 88,
-            letterSpacing: "0.06em",
-            lineHeight: 1,
-            color: "#ffffff",
-          }}
-        >
-          GIT<span style={{ color: BRAND }}>FUT</span>
+      {false && (
+        <div style={abs(SAFE_TOP + 8)}>
+          <div
+            style={{
+              fontFamily: FONT_DISPLAY,
+              fontSize: 88,
+              letterSpacing: "0.06em",
+              lineHeight: 1,
+              color: "#ffffff",
+            }}
+          >
+            GIT<span style={{ color: BRAND }}>FUT</span>
+          </div>
+          <div
+            style={{
+              marginTop: 20,
+              fontFamily: FONT_COND,
+              fontSize: 34,
+              letterSpacing: "0.4em",
+              color: "rgba(255,255,255,0.86)",
+              textTransform: "uppercase",
+            }}
+          >
+            Your GitHub, Scouted
+          </div>
         </div>
-        <div
-          style={{
-            marginTop: 20,
-            fontFamily: FONT_COND,
-            fontSize: 34,
-            letterSpacing: "0.4em",
-            color: "rgba(255,255,255,0.86)",
-            textTransform: "uppercase",
-          }}
-        >
-          Your GitHub, Scouted
-        </div>
-      </div>
+      )}
 
       {/* centre — the card, lit by a tier glow halo so it floats off the stage */}
       <div
@@ -204,34 +206,36 @@ const StoryFrame = forwardRef<HTMLDivElement, { card: Card }>(function StoryFram
           IG's bottom bar never eats the conversion. No button container — the
           story isn't tappable, so it reads as a confident headline, not a fake
           tap target. Bookends the green "GITFUT" up top. */}
-      <div
-        style={{
-          position: "absolute",
-          left: 0,
-          right: 0,
-          bottom: SAFE_BOTTOM + 6,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+      {false && (
         <div
           style={{
-            fontFamily: FONT_DISPLAY,
-            fontSize: 56,
-            letterSpacing: "0.04em",
-            lineHeight: 1,
-            color: BRAND,
+            position: "absolute",
+            left: 0,
+            right: 0,
+            bottom: SAFE_BOTTOM + 6,
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
-            gap: 18,
-            whiteSpace: "nowrap",
           }}
         >
-          TRY YOUR CARD ON GITFUT.COM
-          <span style={{ fontSize: 48 }}>→</span>
+          <div
+            style={{
+              fontFamily: FONT_DISPLAY,
+              fontSize: 56,
+              letterSpacing: "0.04em",
+              lineHeight: 1,
+              color: BRAND,
+              display: "flex",
+              alignItems: "center",
+              gap: 18,
+              whiteSpace: "nowrap",
+            }}
+          >
+            TRY YOUR CARD ON GITFUT.COM
+            <span style={{ fontSize: 48 }}>→</span>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 });

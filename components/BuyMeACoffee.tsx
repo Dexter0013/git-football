@@ -15,13 +15,11 @@ const BMC_URL = "https://buymeacoffee.com/gitfut";
 // credit, and auto-hides on scroll-down there (see useHideOnScroll).
 export default function BuyMeACoffee() {
   const hidden = useHideOnScroll();
-  // rise-soft's 0% frame is invisible, so the delay doubles as a "let the page
-  // settle first" gate. Delay + fill must live in `style`: the
-  // animate-rise-soft shorthand resets any class-based delay, and the theme
-  // token's `both` fill would keep the 100% frame's transform pinned after the
-  // entrance, eating the hover lift — `backwards` releases it.
+  return null;
+
   return (
     <a
+
       href={BMC_URL}
       target="_blank"
       rel="noopener"

@@ -145,7 +145,7 @@ function TeamNews() {
           preserveAspectRatio="none"
           className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.08]"
         >
-          <g fill="none" stroke="#39d353" strokeWidth="1.3">
+          <g fill="none" stroke="#0084ff" strokeWidth="1.3">
             <rect x="9" y="9" width="282" height="192" rx="2" />
             <line x1="150" y1="9" x2="150" y2="201" />
             <circle cx="150" cy="105" r="30" />
@@ -158,7 +158,7 @@ function TeamNews() {
             <rect x="276" y="84" width="15" height="42" />
             <path d="M251 83 A 25 25 0 0 0 251 127" />
           </g>
-          <g fill="#39d353">
+          <g fill="#0084ff">
             <circle cx="150" cy="105" r="2.4" />
             <circle cx="37" cy="105" r="1.5" />
             <circle cx="263" cy="105" r="1.5" />
@@ -171,7 +171,7 @@ function TeamNews() {
           className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-px"
           style={{
             background:
-              "linear-gradient(90deg, transparent, rgba(57,211,83,.55), transparent)",
+              "linear-gradient(90deg, transparent, rgba(0,132,255,.55), transparent)",
           }}
         />
 

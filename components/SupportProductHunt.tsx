@@ -10,8 +10,11 @@ const PH_URL = "https://www.producthunt.com/products/gitfut";
 // scroll-down in sync with it via the shared useHideOnScroll hook.
 export default function SupportProductHunt() {
   const hidden = useHideOnScroll();
+  return null;
+
   return (
     <a
+
       href={PH_URL}
       target="_blank"
       rel="noopener"

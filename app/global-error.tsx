@@ -6,7 +6,7 @@ import { useEffect } from "react";
 // so this replaces the entire document (it must render its own <html>/<body>).
 // It can't rely on the layout's fonts, globals.css tokens or <Background>, so it's
 // intentionally self-contained with inline styles in the brand palette
-// (bg #02001e, GitHub green #39d353).
+// (bg #02001e, FIFA blue #0084ff).
 export default function GlobalError({
   error,
   reset,
@@ -35,7 +35,7 @@ export default function GlobalError({
         }}
       >
         <div style={{ maxWidth: 460 }}>
-          <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.3em", color: "#39d353" }}>GITFUT</div>
+          <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.3em", color: "#0084ff" }}>GITFUT</div>
           <h1 style={{ margin: "14px 0 0", fontSize: 34, fontWeight: 800, lineHeight: 1.05 }}>Match abandoned</h1>
           <p style={{ margin: "14px 0 0", fontSize: 15.5, lineHeight: 1.5, color: "#a8b3bd" }}>
             Something went badly wrong. Reload to get back to the pitch.
@@ -48,7 +48,7 @@ export default function GlobalError({
               padding: "0 24px",
               border: 0,
               borderRadius: 12,
-              background: "#39d353",
+              background: "#0084ff",
               color: "#04130a",
               fontSize: 16,
               fontWeight: 700,

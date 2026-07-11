@@ -12,10 +12,10 @@ import {
 // Exported so the fixture poster paints its full-canvas strike and letters in
 // exactly this kit.
 export const VS_PALETTE = {
-  fill: "#26a641",
-  rim: "#56e06b",
-  glow: "#39d353",
-  core: "#eaffe8",
+  fill: "#0060b8",
+  rim: "#4da6ff",
+  glow: "#0084ff",
+  core: "#e0f0ff",
 } as const;
 const { fill: FILL, rim: RIM, glow: GLOW, core: CORE } = VS_PALETTE;
 

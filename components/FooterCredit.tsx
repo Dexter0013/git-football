@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const CONTRIBUTORS_URL = "https://github.com/younesfdj/gitfut/graphs/contributors";
+const CONTRIBUTORS_URL = "https://github.com/Dexter0013/git-football/graphs/contributors";
 
 let cachedCount: number | null = null;
 
@@ -26,37 +26,41 @@ export default function FooterCredit() {
       .catch(() => {});
   }, []);
 
-  const link = "text-ink-dim underline-offset-2 transition hover:text-ink hover:underline";
+  // Hide the footer credit visually but keep the code intact below
+  return null;
 
-  return (
-    <div className="relative inline-flex max-w-full items-center justify-center">
-      {/* weak dark fade behind the credit — soft-edged, no hard pill outline */}
-      <span
-        aria-hidden
-        className="pointer-events-none absolute inset-x-[-18px] inset-y-[-6px] rounded-full bg-bg-deep/70 blur-[10px]"
-      />
-
-      <div className="relative flex flex-wrap items-center justify-center gap-x-[clamp(3px,1.4vw,6px)] gap-y-[4px] text-[length:clamp(9px,2.7vw,13.5px)] font-semibold leading-none text-ink-soft">
-        <span className="text-ink-mute">Built by</span>
-
-        <a href="https://x.com/younesfdj" target="_blank" rel="noopener" className={link}>
-          @Younes
-        </a>
-
-        <span className="text-ink-mute">&amp;</span>
-
-        <a href={CONTRIBUTORS_URL} target="_blank" rel="noopener" className={link}>
-          <span
-            style={{
-              filter: count === null ? "blur(5px)" : "blur(0)",
-              transition: "filter .5s ease",
-            }}
-          >
-            {count ?? 5}
-          </span>{" "}
-          amazing contributors
-        </a>
-      </div>
-    </div>
-  );
+  // const link = "text-ink-dim underline-offset-2 transition hover:text-ink hover:underline";
+  // 
+  // return (
+  //   <div className="relative inline-flex max-w-full items-center justify-center">
+  //     {/* weak dark fade behind the credit — soft-edged, no hard pill outline */}
+  //     <span
+  //       aria-hidden
+  //       className="pointer-events-none absolute inset-x-[-18px] inset-y-[-6px] rounded-full bg-bg-deep/70 blur-[10px]"
+  //     />
+  // 
+  //     <div className="relative flex flex-wrap items-center justify-center gap-x-[clamp(3px,1.4vw,6px)] gap-y-[4px] text-[length:clamp(9px,2.7vw,13.5px)] font-semibold leading-none text-ink-soft">
+  //       <span className="text-ink-mute">Built by</span>
+  // 
+  //       <a href="https://x.com/younesfdj" target="_blank" rel="noopener" className={link}>
+  //         @Younes
+  //       </a>
+  // 
+  //       <span className="text-ink-mute">&amp;</span>
+  // 
+  //       <a href={CONTRIBUTORS_URL} target="_blank" rel="noopener" className={link}>
+  //         <span
+  //           style={{
+  //             filter: count === null ? "blur(5px)" : "blur(0)",
+  //             transition: "filter .5s ease",
+  //           }}
+  //         >
+  //           {count ?? 5}
+  //         </span>{" "}
+  //         amazing contributors
+  //       </a>
+  //     </div>
+  //   </div>
+  // );
 }
+

@@ -7,8 +7,8 @@ Thanks for wanting to help scout GitHub's finest ⚽ — bug fixes, new playstyl
 GitFut is a [Next.js](https://nextjs.org) (App Router) app in TypeScript, styled with Tailwind. You'll need **Node 20+** and **npm**.
 
 ```bash
-git clone https://github.com/Younesfdj/gitfut.git
-cd gitfut
+git clone https://github.com/Dexter0013/git-football.git
+cd git-football
 npm install
 npm run dev          # http://localhost:3000
 ```
@@ -52,7 +52,7 @@ npm test          # vitest unit tests (in tests/)
 
 ## Ideas & bugs
 
-Open an [issue](https://github.com/Younesfdj/gitfut/issues) (there are templates). Good places to start: new playstyles/archetypes, scoring tweaks, language-logo coverage, accessibility, and card/OG rendering.
+Open an [issue](https://github.com/Dexter0013/git-football/issues) (there are templates). Good places to start: new playstyles/archetypes, scoring tweaks, language-logo coverage, accessibility, and card/OG rendering.
 
 Found a security issue? Please **don't** open a public issue — see [SECURITY.md](./SECURITY.md).
 

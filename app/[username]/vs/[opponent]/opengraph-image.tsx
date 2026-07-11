@@ -84,7 +84,7 @@ function title(fontSize: number) {
         fontSize,
         color: "#f2fff4",
         letterSpacing: 6,
-        textShadow: "0 0 26px rgba(57,211,83,.6), 0 2px 0 rgba(0,0,0,.6)",
+        textShadow: "0 0 26px rgba(0,132,255,.6), 0 2px 0 rgba(0,0,0,.6)",
       }}
     >
       SCOUT DUEL
@@ -115,7 +115,7 @@ export default async function Image({
             justifyContent: "center",
             background: "#05030e",
             backgroundImage:
-              "radial-gradient(520px 300px at 50% -8%, rgba(235,255,240,0.12), transparent 60%), radial-gradient(760px 200px at 50% 103%, rgba(57,211,83,0.18), transparent 70%)",
+              "radial-gradient(520px 300px at 50% -8%, rgba(235,255,240,0.12), transparent 60%), radial-gradient(760px 200px at 50% 103%, rgba(0,132,255,0.18), transparent 70%)",
             color: "#e6edf3",
             fontFamily: "DINPro",
             textAlign: "center",
@@ -137,7 +137,7 @@ export default async function Image({
             style={{
               display: "flex",
               fontSize: 32,
-              color: "#39d353",
+              color: "#0084ff",
               fontWeight: 700,
               marginTop: 10,
             }}
@@ -177,9 +177,9 @@ export default async function Image({
           // cards so no dead-black frames them)
           backgroundImage: [
             "radial-gradient(520px 300px at 50% -8%, rgba(235,255,240,0.12), transparent 60%)",
-            "radial-gradient(820px 210px at 50% 103%, rgba(57,211,83,0.22), transparent 70%)",
-            "radial-gradient(260px 100px at 20% 101%, rgba(57,211,83,0.12), transparent 70%)",
-            "radial-gradient(260px 100px at 80% 101%, rgba(57,211,83,0.1), transparent 70%)",
+            "radial-gradient(820px 210px at 50% 103%, rgba(0,132,255,0.22), transparent 70%)",
+            "radial-gradient(260px 100px at 20% 101%, rgba(0,132,255,0.12), transparent 70%)",
+            "radial-gradient(260px 100px at 80% 101%, rgba(0,132,255,0.1), transparent 70%)",
             `radial-gradient(440px 580px at 26% 48%, ${aGlow}, transparent 60%)`,
             `radial-gradient(440px 580px at 74% 48%, ${bGlow}, transparent 60%)`,
           ].join(", "),

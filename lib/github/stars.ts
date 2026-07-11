@@ -2,7 +2,7 @@ import "server-only";
 
 // The project's own GitHub repo — its star count powers the "Support the
 // project" link in the home footer.
-const REPO = "younesfdj/gitfut";
+const REPO = "Dexter0013/git-football";
 
 // Best-effort star count, cached for an hour (revalidate) so it's fast and never
 // rate-limited — one cached call covers all visitors instead of each browser

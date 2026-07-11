@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Mascot from "./Mascot";
 import { punAt } from "@/lib/puns";
 
-// Full-screen loading state shown while the card image is generated. Mascot
-// juggles the WC26 ball; a football-git pun rotates every ~1.8s.
+// Full-screen glassmorphic loading overlay shown while the card image is generated.
+// Mascot juggles the WC26 ball; a football-git pun rotates every ~1.8s.
 export default function LoadingScreen({ login }: { login?: string }) {
   const [tick, setTick] = useState(0);
 
@@ -15,12 +15,19 @@ export default function LoadingScreen({ login }: { login?: string }) {
   }, []);
 
   return (
-    <main className="relative z-[2] flex h-[100dvh] flex-col items-center justify-center px-6 text-center">
-      <Mascot size={220} kick ball />
+    <div
+      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#010012]/60 backdrop-blur-md px-6 text-center"
+      style={{ animation: "gf-fade-in 0.25s ease-out both" }}
+    >
+      <Mascot kick ball className="w-[150px] h-[150px] max-[520px]:w-[100px] max-[520px]:h-[100px]" />
 
       <div className="font-display mt-8 text-[clamp(30px,5vw,52px)] leading-none tracking-[.02em] text-ink">
         SCOUTING{" "}
-        {login && <span className="font-mono align-middle text-[0.5em] text-brand">@{login}</span>}
+        {login && (
+          <span className="font-mono align-middle text-[0.5em] text-brand">
+            @{login}
+          </span>
+        )}
       </div>
 
       {/* rotating pun line */}
@@ -40,7 +47,10 @@ export default function LoadingScreen({ login }: { login?: string }) {
         />
       </div>
 
-      <style>{`@keyframes gf-load{0%{transform:translateX(-120%)}100%{transform:translateX(360%)}}`}</style>
-    </main>
+      <style>{`
+        @keyframes gf-load{0%{transform:translateX(-120%)}100%{transform:translateX(360%)}}
+        @keyframes gf-fade-in{0%{opacity:0}100%{opacity:1}}
+      `}</style>
+    </div>
   );
 }

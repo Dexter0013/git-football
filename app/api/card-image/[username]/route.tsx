@@ -40,17 +40,17 @@ async function fallback(username: string) {
           alignItems: "center",
           justifyContent: "center",
           background: "#02001e",
-          backgroundImage: "radial-gradient(60% 40% at 50% 32%, rgba(57,211,83,0.16), transparent 72%)",
+          backgroundImage: "radial-gradient(60% 40% at 50% 32%, rgba(0,132,255,0.16), transparent 72%)",
           color: "#e6edf3",
           fontFamily: "DINPro",
           padding: 64,
           textAlign: "center",
         }}
       >
-        <div style={{ display: "flex", color: "#39d353", fontSize: 34, fontWeight: 700, letterSpacing: 6 }}>GITFUT</div>
+        <div style={{ display: "flex", color: "#0084ff", fontSize: 34, fontWeight: 700, letterSpacing: 6 }}>GITFUT</div>
         <div style={{ display: "flex", fontSize: 56, fontWeight: 700, marginTop: 24 }}>@{username}</div>
         <div style={{ display: "flex", fontSize: 30, color: "#a8b3bd", marginTop: 22 }}>scout this profile at</div>
-        <div style={{ display: "flex", marginTop: 10, fontSize: 32, color: "#39d353", fontWeight: 700 }}>gitfut.com</div>
+        <div style={{ display: "flex", marginTop: 10, fontSize: 32, color: "#0084ff", fontWeight: 700 }}>gitfut.com</div>
       </div>
     ),
     { width: W, height: H, fonts, headers: { "Cache-Control": "public, max-age=300" } },

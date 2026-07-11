@@ -30,7 +30,7 @@ export default function ScoutForm({
   };
 
   return (
-    <div className="min-w-0 flex-1">
+    <div className="min-w-0 w-full flex flex-col items-center justify-center text-center">
       {/* mascot — the brand face on the hero */}
       <div className="mb-1 mx-auto flex justify-center">
         <Mascot className="w-[110px] h-[110px] max-[520px]:w-[75px] max-[520px]:h-[75px]" />

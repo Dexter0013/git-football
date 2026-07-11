@@ -667,7 +667,7 @@ export default function DuelView({
           {corner(opponent, bTheme, "opponent")}
         </div>
 
-        <footer className="relative z-[2] mt-auto flex flex-none items-center justify-center p-[clamp(12px,2.6vh,24px)]">
+        <footer className="relative z-[2] mt-auto flex flex-none items-center justify-center">
           <FooterCredit />
         </footer>
       </main>

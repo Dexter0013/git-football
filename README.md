@@ -6,6 +6,8 @@
 
 **your GitHub, rated out of 99** ⚽
 
+*This project is a customized fork of the open-source [gitfut](https://github.com/younesfdj/gitfut) project.*
+
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2600&pause=800&color=39D353&center=true&vCenter=true&width=660&height=42&lines=Turn+any+GitHub+profile+into+a+FIFA-style+card;Scored+live+from+real+commits%2C+stars+%26+PRs;Embed+it+anywhere+%E2%80%94+it+updates+itself" alt="Turn any GitHub profile into a player card, scored live, embeddable anywhere">
 
 <br/><br/>

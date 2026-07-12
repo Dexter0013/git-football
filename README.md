@@ -27,7 +27,7 @@
 Your card lives at a URL. Drop it in your profile README, your portfolio, anywhere — and it **re-scouts itself** as your stats change.
 
 ```md
-[![My GitFut card](https://gitfut.com/YOUR_USERNAME.png)](https://gitfut.com/YOUR_USERNAME)
+[![My GitFut card](https://gitfootball2026.vercel.app/YOUR_USERNAME.png)](https://gitfootball2026.vercel.app/YOUR_USERNAME)
 ```
 
 | | |

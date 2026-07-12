@@ -32,8 +32,8 @@ Your card lives at a URL. Drop it in your profile README, your portfolio, anywhe
 
 | | |
 |---|---|
-| **`gitfut.com/<username>.png`** | your card, as a live image |
-| **`gitfut.com/<username>`** | the full scout report |
+| **`gitfootball2026.vercel.app//<username>.png`** | your card, as a live image |
+| **`gitfootball2026.vercel.app//<username>`** | the full scout report |
 | **`?country=XX`** | override the flag (e.g. `?country=DZ`) |
 
 <br/>
@@ -71,8 +71,6 @@ Every card walks out in a finish:
 <div align="center">
 
 **Built with** Next.js · TypeScript · Tailwind · Redis
-
-**[gitfut.com](https://gitfut.com)** &nbsp;·&nbsp; scout someone today
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=90&color=0:39d353,100:006d32&section=footer" alt="" width="100%">
 

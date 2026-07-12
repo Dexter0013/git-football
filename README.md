@@ -32,8 +32,8 @@ Your card lives at a URL. Drop it in your profile README, your portfolio, anywhe
 
 | | |
 |---|---|
-| **`gitfootball2026.vercel.app//<username>.png`** | your card, as a live image |
-| **`gitfootball2026.vercel.app//<username>`** | the full scout report |
+| **`gitfootball2026.vercel.app/<username>.png`** | your card, as a live image |
+| **`gitfootball2026.vercel.app/<username>`** | the full scout report |
 | **`?country=XX`** | override the flag (e.g. `?country=DZ`) |
 
 <br/>

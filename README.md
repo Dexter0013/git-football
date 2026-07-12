@@ -12,9 +12,9 @@
 
 <br/><br/>
 
-<a href="https://gitfut.com/torvalds"><img src="https://gitfut.com/torvalds.png" width="240" alt="GitFut card"></a>
-<a href="https://gitfut.com/ThePrimeagen"><img src="https://gitfut.com/ThePrimeagen.png" width="240" alt="GitFut card"></a>
-<a href="https://gitfut.com/t3dotgg"><img src="https://gitfut.com/t3dotgg.png" width="240" alt="GitFut card"></a>
+<a href="https://gitfootball2026.vercel.app/torvalds"><img src="https://gitfootball2026.vercel.app/torvalds.png" width="240" alt="GitFut card"></a>
+<a href="https://gitfootball2026.vercel.app/ThePrimeagen"><img src="https://gitfootball2026.vercel.app/ThePrimeagen.png" width="240" alt="GitFut card"></a>
+<a href="https://gitfootball2026.vercel.app/t3dotgg"><img src="https://gitfootball2026.vercel.app/t3dotgg.png" width="240" alt="GitFut card"></a>
 
 <br/><br/>
 

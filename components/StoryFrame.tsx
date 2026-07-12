@@ -231,7 +231,7 @@ const StoryFrame = forwardRef<HTMLDivElement, { card: Card }>(function StoryFram
               whiteSpace: "nowrap",
             }}
           >
-            TRY YOUR CARD ON GITFUT.COM
+            TRY YOUR CARD ON GITFOOTBALL2026
             <span style={{ fontSize: 48 }}>→</span>
           </div>
         </div>

@@ -197,9 +197,8 @@ export function cardTree(card: Card, assets: CardAssets, w: number) {
         </div>
       ))}
 
-      {/* signature — branding baked into every shared/embedded card */}
       <div style={{ ...at(8, 94.6), display: "flex", fontSize: cqw(4.1), fontWeight: 700, letterSpacing: cqw(0.4), color: ink, opacity: 0.62 }}>
-        GITFUT.COM
+        GITFOOTBALL2026
       </div>
       <div style={{ position: "absolute", right: "8%", top: "94.6%", display: "flex", fontSize: cqw(4.1), fontWeight: 700, letterSpacing: cqw(0.4), color: ink, opacity: 0.62 }}>
         @{card.login}

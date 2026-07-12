@@ -323,7 +323,7 @@ function PlayerCard({ card }: { card: Card }) {
             opacity: 0.62,
           }}
         >
-          GITFUT.COM
+          GITFOOTBALL2026
         </div>
         <div
           style={{

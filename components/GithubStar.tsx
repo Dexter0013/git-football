@@ -1,7 +1,7 @@
 import { Star, Globe } from "lucide-react";
 import { formatCount } from "@/lib/format";
 
-const REPO_URL = "https://github.com/Dexter0013/git-football";
+const REPO_URL = "https://github.com/Dexter0013/git-football/tree/My-Work";
 const ORIGINAL_URL = "https://gitfut.com/";
 
 // lucide dropped its brand marks, so the GitHub octocat is an inline SVG.
